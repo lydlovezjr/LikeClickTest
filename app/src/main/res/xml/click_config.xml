@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--第一步 添加配置文件 声明使用的服务要求-->
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagReportViewIds"
+    android:canRetrieveWindowContent="true"
+    android:description="@string/click_auto"
+    android:notificationTimeout="100"
+    android:packageNames="com.miui.calculator"/>
+
+    <!--注释开始-->
+    <!--accessibilityEventTypes 辅助服务关注的事件类型. //这里响应全部类型事件-->
+    <!--android:accessibilityFeedbackType 事件的反馈类型,例如声音反馈,触觉反馈,视觉反馈等. //这里使用通用类型-->
+    <!--accessibilityFlags 辅助服务额外的flag信息 例如FLAG_REPORT_VIEW_IDS可以使回调的事件带上view的ID-->
+    <!--canRetrieveWindowContent 是否可以获取窗口内容-->
+    <!--notificationTimeout 两个同样类型的辅助事件发给辅助服务的最小时间间隔-->
+    <!--packageNames  指明了自己的辅助服务关心哪些应用发出的事件,多个应用包名之间用逗号分隔.如果不填,则关注手机上所有应用发出的事件.-->
+    <!--注释结束-->
+
